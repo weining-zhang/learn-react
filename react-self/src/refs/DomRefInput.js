@@ -13,7 +13,7 @@ class DomRefInput extends Component {
   }
 
   focusTextInput() {
-    // 通过 current 访问 ref
+    // 通过 current 属性访问 ref
     this.textInput.current.focus()
   }
 

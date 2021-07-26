@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import useMyState from './UseState';
+import UseReducerDemo from './UseReducer';
 
 const MyUseState = useMyState;
 
@@ -42,6 +43,7 @@ function App() {
       <ThemeContext.Provider value={themes.dark}> {/* 当前的 context 值由上层组件中距离当前组件最近的 <MyContext.Provider> 的 value prop 决定 */}
         {/* <Toolbar /> */}
       </ThemeContext.Provider>
+      <UseReducerDemo/>
     </div>
   )
 }

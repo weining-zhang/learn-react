@@ -6,7 +6,7 @@ function useMyState() {
 
   let handleOrangeClick = () => {
     setFruit('orange');
-  }q
+  }
 
   return (
     <div>

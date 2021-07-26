@@ -1,11 +1,9 @@
-import RefsDemo from './refs/index.js';
-import ContextDemo from './context/index';
+import AppRouter from './router/index';
 
 function App() {
   return (
     <div className="App">
-      <RefsDemo/>
-      <ContextDemo/>
+      <AppRouter/>
     </div>
   );
 }

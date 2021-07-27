@@ -2,11 +2,16 @@
   // display: flex;
 
   .item {
-    color: black;
+    color: #000000;
     text-decoration: none;
   
     &:hover {
       color: blue;
+    }
+
+    > span {
+      font-size: 18px;
+      font-weight: bold;
     }
   }
 }

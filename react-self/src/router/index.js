@@ -10,15 +10,15 @@ import s from './style.module.scss';
 function AppRouter() {
   return (
     <Router>
-      <ul className={s.container}>
+      <ul className={s.routerContainer}>
         <li>
-          <Link to="/refs" className={s.item}><span>refs</span> 页面</Link>
+          <Link to="/refs" className={s.routeItem}><span>refs</span> 页面</Link>
         </li>
         <li>
-          <Link to="/context" className={s.item}><span>context</span> 页面</Link>
+          <Link to="/context" className={s.routeItem}><span>context</span> 页面</Link>
         </li>
         <li>
-          <Link to="/containment" className={s.item}><span>containment</span> 页面</Link>
+          <Link to="/containment" className={s.routeItem}><span>containment</span> 页面</Link>
         </li>
       </ul>
 

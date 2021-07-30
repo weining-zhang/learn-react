@@ -1,12 +1,17 @@
-.container {
+.routerContainer {
   // display: flex;
 
-  .item {
-    color: black;
+  .routeItem {
+    color: #000000;
     text-decoration: none;
   
     &:hover {
-      color: blue;
+      background-color: #e6e9ed;
+    }
+
+    > span {
+      font-size: 18px;
+      font-weight: bold;
     }
   }
 }

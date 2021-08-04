@@ -7,14 +7,14 @@ function NestedThemeToggleButton() {
   // 它也从 context 中获取到一个 toggleTheme 函数
   return (
     <NestedThemeContext.Consumer>
-      {({theme, toggleTheme}) => {
+      {({theme, toggleTheme}) => (
         <button
           onClick={toggleTheme}
           style={{backgroundColor: theme.background}}
         >
           Nested Toggle Theme
         </button>
-      }}
+      )}
     </NestedThemeContext.Consumer>
   );
 }

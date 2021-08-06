@@ -16,26 +16,20 @@ class NestedContextDemo extends Component {
   constructor(props) {
     super(props);
 
+    this.toggleTheme = () => {
+      this.setState({
+        theme: 
+          this.state.theme === themes.light
+            ? themes.dark
+            : themes.light,
+      })
+    };
+
     // State 也包含了更新函数，因此它会被传递进 context provider
     this.state = {  
       theme: themes.light,
       toggleTheme: this.toggleTheme,
     }
-
-    // this.toggleTheme = () => {
-    //   this.setState({
-    //     theme: 
-    //       this.state.theme === themes.light
-    //         ? themes.dark
-    //         : themes.light,
-    //   })
-    // }
-    this.setState(state => ({
-      theme:
-        state.theme === themes.dark
-          ? themes.light
-          : themes.dark,
-    }));
   }
 
   render() { 
